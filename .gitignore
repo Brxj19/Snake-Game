@@ -1,0 +1,6 @@
+# VS Code specific files
+.vscode/
+
+# Build output
+bin/
+obj/
