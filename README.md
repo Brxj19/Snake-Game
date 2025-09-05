@@ -45,8 +45,8 @@ You will need the following software installed on your system:
 
 1.  Clone the repository:
     ```sh
-    git clone <your-repository-url>
-    cd Snake_game
+    git clone https://github.com/Brxj19/Snake-Game.git
+    cd Snake-game
     ```
 
 2.  Compile the project using the provided Makefile:
@@ -74,38 +74,37 @@ After a successful build, you can run the game with the following command:
 
 ```
 .
-├── Makefile
-├── assets/
-│   └── font/
-│   |   └── DynaPuff-Regular.ttf
-|   |___ textures
-|        |__food.png
-|        |__grass.png
-|        |__snake.png
-|        |__ wall.png
-├── bin/
-│   └── game
-├── includes/
+Snake-Game/
+├── Makefile                 # Top-level build instructions
+├── README.md                # Project overview (this file)
+├── assets/                  # Game assets
+│   ├── font/
+│   │   └── DynaPuff-Regular.ttf
+│   └── textures/
+│       ├── food.png
+│       ├── grass.png
+│       ├── snake.png
+│       └── wall.png
+├── includes/                # Header files
 │   ├── AssetManager.hpp
 │   ├── Game.hpp
 │   ├── GameOver.hpp
 │   ├── GamePlay.hpp
 │   ├── MainMenu.hpp
 │   ├── PauseGame.hpp
-|   |-- State.hpp
-|   |-- Snake.hpp
+│   ├── State.hpp
+│   ├── Snake.hpp
 │   └── StateManager.hpp
-├── obj/
-│   └── ... (object files)
-└── src/
-|    ├── AssetManager.cpp
-|    ├── Game.cpp
-|    ├── GamePlay.cpp
-|    |-- GameOver.cpp
-|    |-- main.cpp
-|    ├── MainMenu.cpp
-|    |-- PauseGame.cpp
-|    |-- Snake.cpp
-|    ├── StateManager.cpp
-|--- Makefile
-|-- README.md
+├── src/                     # Source files
+│   ├── AssetManager.cpp
+│   ├── Game.cpp
+│   ├── GamePlay.cpp
+│   ├── GameOver.cpp
+│   ├── MainMenu.cpp
+│   ├── PauseGame.cpp
+│   ├── Snake.cpp
+│   ├── StateManager.cpp
+│   └── main.cpp             # Entry point
+├── obj/                     # Compiled object files (build output)
+└── bin/                     # Final executable
+    └── game
